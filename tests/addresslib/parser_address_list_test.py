@@ -47,7 +47,7 @@ def test_simple_valid():
     assert_equal(addrs[1].addr_type, 'email')
     assert_equal(addrs[1].display_name, 'Ev K.')
     assert_equal(addrs[1].address, 'ev@host.com')
-    assert_equal(addrs[1].full_spec(), '"Ev K." <ev@host.com>')
+    assert_equal(addrs[1].full_spec(), 'Ev K. <ev@host.com>')
 
     assert_equal(addrs[2].addr_type, 'email')
     assert_equal(addrs[2].display_name, 'Alex K')

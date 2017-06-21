@@ -9,7 +9,7 @@ def test_quote():
     eq_('"foo< bar"', smart_quote('foo< bar'))
     eq_('"foo> bar"', smart_quote('foo> bar'))
     eq_('"foo\\" bar"', smart_quote('foo" bar'))
-    eq_('"foo. bar"', smart_quote('foo. bar'))
+    eq_('foo. bar', smart_quote('foo. bar'))
     eq_('"foo: bar"', smart_quote('foo: bar'))
 
 
